@@ -1,0 +1,1 @@
+pgbench -p 9145 -n -f bench.sql -c 20 -j 16 -T 60 postgres -h /tmp
