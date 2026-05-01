@@ -9,6 +9,6 @@ export PGHOST=pg110
 export LANG=ru_RU.UTF-8
 export LC_ALL=ru_RU.UTF-8
 
-initdb -D "$PGDATA" --encoding=$PGENCODE --locale=$PGLOCALE --lc-messages=$PGLOCALE --lc-monetary=$PGLOCALE --lc-numeric=$PGLOCALE --lc-time=$PGLOCALE --username=$PGUSERNAME
+initdb -D "$PGDATA" --encoding=$PGENCODE --locale=$PGLOCALE
 
 pg_ctl -D $PGDATA -l $PGDATA/server.log start
