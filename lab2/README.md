@@ -55,3 +55,9 @@ archive_timeout = 60
 ```
 pg_basebackup -D /tmp/backup -Ft -Xs -P -h localhost -p 9145 -U trikesh_amuzkarapuz
 ```
+
+передаем с помощью rsync
+
+```
+rsync -avz /tmp/backup/ postgres0@pg121:~/backup_dir/
+```
